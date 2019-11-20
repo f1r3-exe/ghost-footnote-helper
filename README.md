@@ -46,7 +46,7 @@ You can include the script in your Theme (preferred) or via code injection.
 	</section>
 	```
 	**Important:** Upload your theme *and* restart Ghost!
-	<br>
+<br>
 	
 3. **Create footnotes in your text**
 	The script and your theme are ready. Now write your text and create some footnotes like `[1]` .
