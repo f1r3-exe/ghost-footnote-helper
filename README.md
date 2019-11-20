@@ -25,7 +25,7 @@ You can include the script in your Theme (preferred) or via code injection.
 	{{!-- End of all post-related content --}}
 	{{/post}}
 	```
-	&nbsp;
+	<br>
 
 2. **Add a DOM element ID for the helper**
 	The helper if started parses the content of a configured DOM element of the page. You have to guarantee that possible footnotes can be found inside that DOM element. In the `post.hbs` file of the Ghost default theme named "Casper" there is this code block:
@@ -46,7 +46,7 @@ You can include the script in your Theme (preferred) or via code injection.
 	</section>
 	```
 	**Important:** Upload your theme *and* restart Ghost!
-	&nbsp;
+	<br>
 	
 3. **Create footnotes in your text**
 	The script and your theme are ready. Now write your text and create some footnotes like `[1]` .
@@ -59,7 +59,7 @@ If you wanna use other characters for the footnotes like `(1)` or `{1}` take a l
 	
 	**Don't forget:** Footnotes like `[1]` must be a link with a specific target. Within your Ghost editor mark the 3 characters and set the link target to `#footnote-1`.
 	Whatever is inside the square brackets should be the link fronted with `#footnote-` . (This is an example. You can set you own links ;) )
-&nbsp;
+<br>
 
 4. **Use HTML card for footnote section**
 	In order to display footnotes at the bottom of a post, we have to implement some custom HTML. Create a HTML-card (inside the Ghost editor) *at the end of a post* with the following code:
@@ -95,7 +95,7 @@ If you wanna use other characters for the footnotes like `(1)` or `{1}` take a l
 	But if you visit the publicly available page the footnotes section looks pretty nice:
 	(Obviously the style can change if you use another theme than casper)
 	![enter image description here](https://raw.githubusercontent.com/f1r3-exe/ghost-footnote-helper/master/pictures/footnotes-at-post.PNG)
-&nbsp;
+<br>
 
 5. **Activate the footnote helper script**
 	With Ghost you can create tags for your posts. In order to use the fn-helper script you have to add the private tag `#fn-helper` to every post with footnotes.
