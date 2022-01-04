@@ -21,7 +21,7 @@ function walkTree (node) {
 			aElem.href = '#fnref-' + content;
 			aElem.className = fn_className;
 			aElem.innerText = fn_backSymbol;
-			footnotes[index].childNodes[0].appendChild(aElem);
+			footnotes[index].children[0].appendChild(aElem);
 			index = index + 1;
 		}
 	}
